@@ -13,6 +13,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
+    "types": ["cypress", "node"],
 
     /* Linting */
     "strict": true,
@@ -20,6 +21,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "src/tests/setup.ts"],
+  "include": ["src", "src/tests/setup.ts", "./cypress.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
