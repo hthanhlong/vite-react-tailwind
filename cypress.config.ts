@@ -1,18 +1,12 @@
-// import { defineConfig } from "cypress"
-
-// export default defineConfig({
-//   projectId: 'zfkm4y',
-//   component: {
-//     devServer: {
-//       framework: "react",
-//       bundler: "vite"
-//     }
-//   }
-// })
-
 import { defineConfig } from "cypress"
 
 export default defineConfig({
+  projectId: "zfkm4y",
+  e2e: {
+    setupNodeEvents(on, config) {
+      // implement node event listeners here
+    }
+  },
   component: {
     devServer: {
       framework: "react",
